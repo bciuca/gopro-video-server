@@ -1,7 +1,7 @@
 GoPro Video Server Rx
 ---------------------
 
-Capture clips through rest commands and request the video file.
+Capture clips through rest commands and request the video file. Use at your own risk.
 
 Example usage:
 
