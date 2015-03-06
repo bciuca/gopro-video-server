@@ -1,0 +1,10 @@
+{
+  "name": "PhotoPassGoPro",
+  "version": "0.0.1",
+  "private": true,
+  "dependencies": {
+    "restify": "^2.8.5",
+    "rx": "^2.4.1",
+    "rx-http-client": "0.0.1"
+  }
+}
