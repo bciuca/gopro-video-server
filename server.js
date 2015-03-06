@@ -29,6 +29,7 @@ function startServer() {
     });
 
     server.get('/capture', function(req, res, next) {
+        console.log('capture requested');
         if (capturing) {
             res.send(400, { status: 'capture in progress'});
             return next();
@@ -39,6 +40,7 @@ function startServer() {
         var seconds = parseInt(req.params.s, 10);
         seconds = isNaN(seconds) ? 3 : seconds;
         gopro.takeClip(seconds)
+            .take(1)
             .takeUntil(stopCapture)
             .doAction(function(clip) {
                 res.send(clip);

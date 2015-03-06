@@ -1,9 +1,9 @@
 var gopro = require('./lib/gopro.js');
-var child = require('child_process').fork('./lib/ping.js');
+var pingProcess = require('child_process').fork('./lib/ping.js');
 var serverProcess = require('child_process').fork('./server.js');
 
 function ping() {
-    child.send('start');
+    pingProcess.send('start');
 }
 
 function startServer() {
