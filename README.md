@@ -16,6 +16,14 @@ Once the server starts, the app will ping the GoPro every 2 seconds to keep it a
 Capture a 5 second clip. The response object will contain the relative path to the media file.
 
 Request: `http://localhost:3000/capture?t=5`
+
 Response: `{ clip: "media/GOPR1234.MP4" }`
 
 Note: The capture request returns immediately with the new file name, even if recording is still in progress. Some updates will be needed to request the file async.
+
+### Resources
+
+[goproh4](https://github.com/citolen/goproh4) - fully featured library
+
+[gopro](http://www.gopro.com)
+
