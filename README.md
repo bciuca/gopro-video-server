@@ -23,9 +23,4 @@ Note: The capture request returns immediately with the new file name, even if re
 
 ### Resources
 
-The following were used as reference in getting started with remotely controlling the GoPro, especially with getting the http paths to the Hero4.
-
-[goproh4](https://github.com/citolen/goproh4) - fully featured library
-
-[gopro](http://www.gopro.com)
-
+[GoPro](http://www.gopro.com) had some basic instructions in getting started with remotely controlling the GoPro. [Goproh4](https://github.com/citolen/goproh4) was very useful in getting all the needed URLs for the Hero4. I decided against using the library directly because I really only needed a few commands, and I didn't like the callback hell pattern when chaining commands. An Rx/promise based fork would be nice.
